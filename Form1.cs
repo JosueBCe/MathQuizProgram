@@ -47,8 +47,8 @@ namespace TimedMathQuiz
 
             sum.Value = 0;
 
-            // Set label color black 
-            timeLabel.ForeColor = Color.Black;
+          
+       
             // get random numbers for the substraction
             // convert to string 
             // set in the text Labels and difference
@@ -94,6 +94,7 @@ namespace TimedMathQuiz
             // Start the timer.
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
+
             timer1.Start();
            
         }
@@ -117,7 +118,9 @@ namespace TimedMathQuiz
             // Class intended to keep and change the 
             // values of the colors throughout the form depending
             // on the time and answered 
-           
+           timeLabel.BackColor = Color.Black;
+           timeLabel.ForeColor = Color.White;
+
             if (timeLeft < 5)
             {
                 timeLabel.BackColor = Color.Red; 
@@ -213,6 +216,11 @@ namespace TimedMathQuiz
         }
 
         private void currentTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }

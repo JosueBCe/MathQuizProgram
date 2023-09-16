@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.timeLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.plusLeftLabel = new System.Windows.Forms.Label();
             this.plusSign = new System.Windows.Forms.Label();
@@ -55,31 +54,19 @@
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.currentTime = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quotient)).BeginInit();
             this.SuspendLayout();
             // 
-            // timeLabel
-            // 
-            this.timeLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.timeLabel.Enabled = false;
-            this.timeLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeLabel.ForeColor = System.Drawing.Color.Black;
-            this.timeLabel.Location = new System.Drawing.Point(203, 22);
-            this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(155, 25);
-            this.timeLabel.TabIndex = 0;
-            this.timeLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(88, 22);
+            this.label2.Location = new System.Drawing.Point(119, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 25);
             this.label2.TabIndex = 1;
@@ -296,7 +283,7 @@
             this.startButton.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startButton.ForeColor = System.Drawing.SystemColors.Info;
-            this.startButton.Location = new System.Drawing.Point(168, 303);
+            this.startButton.Location = new System.Drawing.Point(185, 289);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(146, 35);
             this.startButton.TabIndex = 0;
@@ -313,12 +300,23 @@
             // 
             this.currentTime.AutoSize = true;
             this.currentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentTime.Location = new System.Drawing.Point(12, 336);
+            this.currentTime.Location = new System.Drawing.Point(22, 322);
             this.currentTime.Name = "currentTime";
             this.currentTime.Size = new System.Drawing.Size(83, 16);
             this.currentTime.TabIndex = 19;
             this.currentTime.Text = "Current Time";
             this.currentTime.Click += new System.EventHandler(this.currentTime_Click);
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.BackColor = System.Drawing.SystemColors.GrayText;
+            this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.Location = new System.Drawing.Point(237, 17);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(200, 30);
+            this.timeLabel.TabIndex = 20;
+            this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timeLabel.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Form1
             // 
@@ -326,6 +324,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 361);
+            this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.currentTime);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
@@ -349,7 +348,6 @@
             this.Controls.Add(this.plusSign);
             this.Controls.Add(this.plusLeftLabel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.timeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -367,8 +365,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label plusLeftLabel;
         private System.Windows.Forms.Label plusSign;
@@ -394,6 +390,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label currentDate;
         private System.Windows.Forms.Label currentTime;
+        private System.Windows.Forms.Label timeLabel;
     }
 }
 
