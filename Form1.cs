@@ -10,19 +10,19 @@ namespace TimedMathQuiz
         // to generate random numbers. 
         Random randomizer = new Random();
 
-        // variables for the addition operations
+        // variables for the addition operation
         int addend1;
         int addend2;
 
-        // variables for the substraction operations
+        // variables for the substraction operation
         int minued;
         int subtrahend;
 
-        // variables for the multiplication operations 
+        // variables for the multiplication operation 
         int multiplicand;
         int multiplier;
 
-        // varialbes for the division operations
+        // varialbes for the division operation
         int dividend;
         int divisor;
 
@@ -51,7 +51,7 @@ namespace TimedMathQuiz
        
             // get random numbers for the substraction
             // convert to string 
-            // set in the text Labels and difference
+            // set in the text Labels and calculate the difference
 
             minued = randomizer.Next(1, 101);
             subtrahend = randomizer.Next(1, minued);
@@ -63,7 +63,7 @@ namespace TimedMathQuiz
 
             // get random numbers for the multiplication
             // convert to string 
-            // set in the text Labels and product
+            // set in the text Labels and get the product
 
             multiplicand = randomizer.Next(2, 11);
             multiplier = randomizer.Next(2, 11);
