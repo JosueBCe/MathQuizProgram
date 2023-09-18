@@ -204,7 +204,7 @@ namespace TimedMathQuiz
             }
         }
 
-    
+
         private void correct_Answer(object sender, EventArgs e)
         {
             NumericUpDown inputBox = sender as NumericUpDown;
